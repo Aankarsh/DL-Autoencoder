@@ -1,4 +1,4 @@
-# EX - 7 DL- Convolutional Autoencoder for Image Denoising
+# DL- Convolutional Autoencoder for Image Denoising
 
 ## AIM
 To develop a convolutional autoencoder for image denoising application.
@@ -77,14 +77,14 @@ model = DenoisingAutoencoder().to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-print("Name:AANKARSH J")
-print("Register Number:212223233001")
+print("Name:DHAMINI S")
+print("Register Number:212224040064")
 summary(model, input_size=(1, 28, 28))
 
 def train(model, loader, criterion, optimizer, epochs=5):
     model.train()
-    print("Name:AANKARSH J")
-    print("Register Number:212223233001")
+    print("Name:DHAMINI S")
+    print("Register Number:212224040064")
     for epoch in range(epochs):
         running_loss = 0.0
         for images, _ in loader:
@@ -112,8 +112,8 @@ def visualize_denoising(model, loader, num_images=10):
     noisy_images = noisy_images.cpu().numpy()
     outputs = outputs.cpu().numpy()
 
-    print("Name:AANKARSH J ")
-    print("Register Number:212223233001")
+    print("Name:DHAMINI S")
+    print("Register Number:21222404000064")
     plt.figure(figsize=(18, 6))
 
     for i in range(num_images):
@@ -145,14 +145,16 @@ visualize_denoising(model, test_loader)
 ### OUTPUT
 
 ### Model Summary
-![alt text](image.png)
+<img width="657" height="447" alt="image" src="https://github.com/user-attachments/assets/210d1064-ba1b-40f0-9a06-fe336e0744d2" />
+
 
 ### Training loss
+<img width="346" height="142" alt="image" src="https://github.com/user-attachments/assets/47b529c9-18e9-4f18-9da8-535aa7f0e55b" />
 
-![alt text](image-1.png)
 
 ## Original vs Noisy Vs Reconstructed Image
-![alt text](image-2.png)
+<img width="1256" height="427" alt="image" src="https://github.com/user-attachments/assets/0b521ad7-23d5-43bb-8deb-e41a6d426589" />
+
 
 ## RESULT
 Thus, develop a convolutional autoencoder for image denoising application excuted succesfully
